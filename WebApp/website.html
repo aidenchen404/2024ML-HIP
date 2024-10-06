@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is our amazing website on machine learning.</title>
+    <!-- a css "library", go to https://getbootstrap.com for documentation -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        container {
+            /*display: flex;
+            justify-content: center;
+            align-items: center;*/
+            height: 100vh; /* Full viewport height */
+            width: 100vw; /* Full viewport width */
+            box-sizing: border-box;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        
+        iframe {
+            position: absolute;
+            /*top: 10%;
+            left:25%;*/
+            display: block;
+            width: 71%; /* Adjust width as needed */
+            height: 80%; /* Adjust height as needed */
+            border: none;
+            transform: scaleX(-1);  /*Flip horizontally */
+        }
+    </style>
+    <script>
+        function startAppPy() {
+            //alert("startAppPy is loaded");
+        }
+    </script>
+
+</head>
+<body onload="startAppPy()">
+    <p>Heart rate:......^\.......^\........^\......^\ </p>
+    <p style="text-align:right">Heart rate V2:.....^\..............^\...........^\</p>
+    <div id="container">
+        <iframe src="http://127.0.0.1:5000/video_feed" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
